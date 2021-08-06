@@ -1,23 +1,8 @@
 import java.util.Scanner;
 
-/**
- * CS312 Assignment 10.
- *
- * On my honor, Emiliano Villarreal, this programming assignment is my own work and I have
- * not shared my solution with any other student in the class.
- *
- * email address: ev8559@utexas.edu
- * UTEID: Section 5 digit ID: 8559
- * Grader name: 
- * Number of slip days 
- * used on this assignment: 2
- *
- * Program that allows two people to play Connect Four.
- */
-
 public class ConnectFour {
 
-	// CS312 Students, add your constants here.
+	
 	static int NUM_ROWS = 6;
 	static int NUM_COLS = 7;
 
@@ -26,13 +11,7 @@ public class ConnectFour {
 		intro();
 		names(key);
 
-		// Complete this method.
-		// Make and use one Scanner connected to System.in.
-	}
 
-	// CS312 Students, add your methods here.
-
-	// Show the introduction.
 	public static void intro() {
 		System.out.println("This program allows two people to play the");
 		System.out.println("game of Connect four. Each gameLetter takes turns");
@@ -47,8 +26,7 @@ public class ConnectFour {
 		System.out.println("Open spaces on the board will appear as .'s.\n");
 	}
 
-	// Prompt the user for an int. The String prompt will
-	// be printed out. key must be connected to System.in.
+
 	public static int getInt(Scanner key, String prompt) {
 		while (!key.hasNextInt()) {
 			String notAnInt = key.nextLine();
